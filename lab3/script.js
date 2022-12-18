@@ -10,7 +10,7 @@ function HellowAndGoodBye(){
             speakHello(name);
       }
   }
-  console.log("Зміна регістру першої букви ім'я і додавання фамілії 'Herrington'  до імен, які починаають на b");
+  console.log("Зміна регістру першої букви  і додавання фамілії 'Herrington'  до імен, які починаають на b");
   for (let i=0; i < names.length; i++) {
         if (names[i].charAt(0) == "b") {
             var name = names[i].toUpperCase().charAt(0)+names[i].slice(1) + " Herrington";
