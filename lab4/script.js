@@ -51,14 +51,14 @@
 	};
 	//random
 	ns.loadRandomCatalogItems = function(randomCategoryShort) {
-    var letters = "ABCD";
-    var randomIndex = Math.floor(Math.random() * letters.length);
-    randomCategoryShort = letters[randomIndex];
+        var letters = "ABCD";
+        var randomIndex = Math.floor(Math.random() * letters.length);
+        randomCategoryShort = letters[randomIndex];
 
-    showLoading("#main-content");
-    $ajaxUtils.sendGetRequest(
-        catalogItemsUrl + randomCategoryShort + ".json",
-        buildAndShowCatalogItemsHTML);
+               showLoading("#main-content");
+               $ajaxUtils.sendGetRequest(
+                       catalogItemsUrl + randomCategoryShort + ".json",
+                       buildAndShowCatalogItemsHTML);
 };
 
 		
